@@ -1,0 +1,21 @@
+<h1>Check out this prop</h1>
+
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-4 border">
+	
+		
+			<h2>From: <%= @prop.author %></h2>
+			<h2>To: <%= @prop.recipient %></h2>
+			<h3>Because... <%= @prop.reason %></h3>
+			<%= link_to 'Edit', edit_prop_path(@prop) %>
+			
+			<%= link_to " ", @prop, {method: :delete, data: {confirm: "Are you sure?"}, class: "glyphicon glyphicon-trash"}%>
+			
+			<%= link_to 'Back', props_path %>
+		
+		</div>
+		<div class="col-md-4"></div>
+	
+</div>
+

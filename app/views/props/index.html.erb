@@ -1,0 +1,15 @@
+<h1>This is the props board</h1>
+<div class="row">
+
+	<% @props.each do |p| %>
+	<%= link_to(prop_path(p)) do %>
+		<div class="col-md-4 border">
+			<h2>From: <%= p.author %></h2>
+			<h2>To: <%= p.recipient %></h2>
+			<h3>Because... <%= p.reason %></h3>
+		</div>
+	<% end %>
+	<% end %>
+</div>
+
+<h2><%= link_to "Add a new prop!", new_prop_path %></h2>

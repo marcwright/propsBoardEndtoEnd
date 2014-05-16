@@ -1,0 +1,8 @@
+<%= form_for @prop do |f| %>
+
+<h2> Author: <%= f.text_field :author, class: "form-control" %></h2>
+<h2> Recipient: <%= f.text_field :recipient, class: "form-control" %></h2>
+<h2> Reason: <%= f.text_field :reason, class: "form-control" %></h2>
+    <%= f.submit  "Save this prop", class: "btn" %>
+ 
+<% end %>
